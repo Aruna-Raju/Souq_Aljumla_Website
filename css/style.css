@@ -1,0 +1,110 @@
+body{
+  background-color: #dbdbdb;
+}
+.blue_btn{
+  background-color: #2669AC;
+  color: #fff;
+}
+
+.sidenav {
+  height: 100%;
+  z-index: 1;
+  background-color: #fff;
+  overflow-y: auto;
+}
+.sidenav button:focus{
+  outline: none;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+}
+
+
+.collapsible {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid #ccc;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #2669AC;
+  color: #fff;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  float: right;
+  margin-left: 5px;
+}
+.collapsible:hover:after{
+  color: #fff;
+}
+
+.active:after {
+  content: "\2212";
+  color: #fff;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  transition: max-height 0.2s ease-out;
+  background-color: #fff;
+}
+.prdct_card img{
+
+}
+
+@media screen and (max-width: 500px){
+  
+  .sidenav a{
+    padding: 6px 8px 6px 8px;
+  }
+  .content {
+    padding: 0px;
+    overflow-x: auto;
+  }
+  .navbar .nav-link span{
+    display: none;
+  }
+  .cart_btn .btn span{
+    display: none;
+  }
+  .shw_location .input-group-prepend{
+    display: none;
+  }
+  .category_lst{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

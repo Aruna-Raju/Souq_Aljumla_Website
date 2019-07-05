@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0" charset="utf-8">
+    <meta name="theme-color" content="#fff">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="image/souq_icon.png" type="icon">
+    <title>Aljumla Web</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!--  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/login_page.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+      <header>
+        
+        <nav class="container-fluid navbar navbar-expand-sm bg-white navbar-light fixed-top shadow py-0">
+          <a class="navbar-brand ml-3" href="#"><i class="fas fa-hamburger fa-lg" style="color: #2669AC;"></i></a>
+          <a class="mx-auto text-white" href="index.html"><img src="image/souq_logo_new.png" height="30px" width="150px"></a>
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#"><i class="fas fa-user-circle fa-lg"></i><span> &nbsp;Login/Signup</span></a>
+            </li>
+          </ul>
+        </nav>
+       
+      </header>
+      
+
+      
+      <div class="container">
+        <div class="box"></div>
+        <div class="container-forms">
+          <div class="container-info">
+            <div class="info-item">
+              <div class="table">
+                <div class="table-cell">
+                  <p>
+                    Have an account?
+                  </p>
+                  <div class="btn">
+                    Log in
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="table" style="position: absolute;top: 100px; left: 150px;">
+                <div class="table-cell">
+                  <p>
+                    Don't have an account? 
+                  </p>
+                  <div class="btn">
+                    Sign up
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-form">
+            <div class="form-item log-in">
+              <div class="table">
+                <div class="table-cell">
+                  <input name="Username" placeholder="Username" type="text" />
+                  <input name="Password" placeholder="Password" type="Password" />
+                  <div class="btn">
+                    Log in
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-item sign-up">
+              <div class="table">
+                <div class="table-cell">
+                  <input name="email" placeholder="Email" type="text" />
+                  <input name="Username" placeholder="Username" type="text" />
+                  <input name="Password" placeholder="Password" type="Password" />
+                  <div class="btn">
+                    Sign up
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+            
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+
+    <script type="text/javascript">
+      
+        $(".info-item .btn").click(function(){
+          $(".container").toggleClass("log-in");
+        });
+        $(".container-form .btn").click(function(){
+          $(".container").addClass("active");
+        });
+
+    </script>
+
+
+  </body>
+</html>
